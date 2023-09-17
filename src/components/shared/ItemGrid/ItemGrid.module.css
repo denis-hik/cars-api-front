@@ -1,0 +1,33 @@
+.body {
+    cursor: pointer;
+    margin: 5px;
+    background: cornsilk;
+    border-radius: 10px;
+    position: relative;
+    min-height: 130px;
+    overflow: hidden;
+}
+
+.body .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.body .year {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: white;
+    padding-left: 5px;
+    border-radius: 10px 0 0 0;
+}
+.body .name {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    padding-right: 5px;
+    border-radius: 0 10px 0 0;
+    left: 0px;
+}

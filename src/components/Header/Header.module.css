@@ -1,0 +1,16 @@
+.body {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body .back {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.body .name {
+    margin-right: 10px;
+    font-weight: bold;
+}

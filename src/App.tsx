@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.css';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Panel from './components/shared/Panel';
+import Car from "./components/Car";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.App}>
+      <BrowserRouter>
+        <div className={style.body}>
+          <Panel />
+          <div className={style.content}>
+            <Switch>
+              <Route exact={true} path={"/:car"} component={Home} />
+              <Route exact={true} path={"/:car/:id"} component={Car} />
+              <Redirect from="*" to="/"/>
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
