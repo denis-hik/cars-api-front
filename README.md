@@ -16,5 +16,5 @@ Stack: `JS`, `TS`, `React 18`, `Redux`, `Router Dom`, `Styled Components`, `Axio
 
 API: `api.api-ninjas.com`, `my beck-end`
 
-Time spent: 3h 40m
+Time spent: 6h 40m
 
